@@ -17,7 +17,7 @@ public class UserRegistration {
     // method to check email Valid or Invalid
     public boolean validateEmail(String email) {
         // regex pattern for email
-        return Pattern.matches("[a-z]{3,}[.+-_]*[a-z0-9]*{3,}[@][a-z0-9]{1,}[.][a-z]{2,}[.]*[a-z]*{2,}", email);
+        return Pattern.matches("[\\w+-]+(?:\\.[\\w+-]+)*[@][\\w]{1,}([.]{1}[a-z]{2,}){1,2}", email);
     }
 
     // method to check mobile number Valid or Invalid
